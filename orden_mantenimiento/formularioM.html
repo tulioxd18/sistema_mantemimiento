@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/orden_mantenimiento/disenoM.css">
+    <script src="logicaM.js" defer></script>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h2 class="titulo-principal">🚨 Ejecución de trabajo</h2>
+
+        <form id="form_ejecucion">
+            <div class="ejecucion_trabajo">
+                <label for="empresa_solicitante">Empresa solicitante:</label><br>
+                <select id="empresa_solicitante" name="empresa_solicitante">
+                    <option value="">Seleccione una empresa</option>
+                    <option value="empresa1">empresa 1</option>
+                    <option value="empresa2">empresa 2</option>
+                </select>
+                <br>
+
+                <label for="hora_fecha_ingreso">Fecha y hora de ingreso</label>
+                <input type="datetime-local" id="hora_fecha_ingreso" name="hora_fecha_ingreso"><br>
+
+                <label for="diagnostico">Diagnóstico (causa raíz)</label><br>
+                <textarea id="diagnostico" name="diagnostico" rows="4" cols="50"></textarea><br>
+
+                <label for="hora_fecha_salida">Fecha y hora de salida</label><br>
+                <input type="datetime-local" id="hora_fecha_salida" name="hora_fecha_salida"><br>
+
+                <label for="hora_total_mantenimiento">Horas totales de mantenimiento</label><br>
+                <input type="text" id="hora_total_mantenimiento" name="hora_total_mantenimiento">
+            </div>
+
+            <div class="recursos_utilizados">
+                <h2>Recursos utilizados</h2>
+                <table>
+                    <thead class="tabla-recursos">
+                        <tr>
+                            <th>Número de factura</th>
+                            <th>Descripción del recurso</th>
+                            <th>Proveedor</th>
+                            <th>Cantidad</th>
+                            <th>Costo unitario</th>
+                            <th>Costo del repuesto</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla_recursos_body">
+                        <!-- Filas dinámicas -->
+                    </tbody>
+                </table>
+                <br>
+                <button type="button" id="btn_agregar_fila_u">➕ Agregar recurso</button>
+            </div>
+
+            <div class="actividades_realizadas">
+                <h2>Actividades realizadas</h2>
+                <table>
+                    <thead class="tabla_actividades">
+                        <tr>
+                            <th>Descripción de la actividad</th>
+                            <th>Horas de trabajo</th>
+                            <th>Costo de mano de obra</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla_recursos_body_a">
+
+                    </tbody>
+                </table>
+                <br>
+                <button type="button" id="btn_agregar_fila_a">➕ Agregar actividad</button>
+            </div>
+
+            <div class="acciones"><br>
+                <button type="submit">Enviar Solicitud 🚀</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

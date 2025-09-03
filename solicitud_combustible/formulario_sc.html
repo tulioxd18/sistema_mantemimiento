@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/solicitud_combustible/disenosc.css">
+    <script src="/solicitud_combustible/logicasc.js" defer></script>
+    <title>Solicitud de Combustible</title>
+</head>
+
+<body>
+    <div class="contenedor_principal">
+        <h2 class="titulo-principal">Solicitud de Combustible</h2>
+        <form id="form_solicitudc">
+            <div class="solicitud_combustible">
+                <label for="fecha">Fecha</label><br>
+                <input type="date" id="fecha"><br>
+
+                <label for="vehiculo">Vehículo</label><br>
+                <select id="vehiculo">
+                    <option value="">Seleccione un vehículo</option>
+                    <option value="vehiculo1">Vehículo 1</option>
+                    <option value="vehiculo2">Vehículo 2</option>
+                </select><br>
+
+                <label for="proveedor">Proveedor</label><br>
+                <select id="proveedor">
+                    <option value="">Seleccione un proveedor</option>
+                    <option value="proveedor1">Proveedor 1</option>
+                    <option value="proveedor2">Proveedor 2</option>
+                </select><br>
+
+                <label for="nfactura">Número de Factura</label><br>
+                <select id="nfactura">
+                    <option value="">Seleccione una factura</option>
+                    <option value="factura1">Factura 1</option>
+                    <option value="factura2">Factura 2</option>
+                </select><br>
+
+                <label for="norden">Número de Orden</label><br>
+                <select id="norden">
+                    <option value="">Seleccione una orden</option>
+                    <option value="norden1">Orden 1</option>
+                    <option value="norden2">Orden 2</option>
+                </select><br>
+
+                <label for="estatus_pago">Estatus de Pago</label><br>
+                <select id="estatus_pago">
+                    <option value="">Seleccione un estatus</option>
+                    <option value="pendiente">Pendiente</option>
+                    <option value="cancelada">Cancelada</option>
+                </select><br>
+
+                <label for="cantidad">Cantidad (litros)</label><br>
+                <input type="number" id="cantidad" placeholder="0.00"><br>
+
+                <label for="costos">Costo por litro</label><br>
+                <input type="number" id="costos" placeholder="0.00"><br>
+
+                <label for="descuento">Descuento</label><br>
+                <input type="number" id="descuento"><br>
+
+                <label for="subtotal">Subtotal</label><br>
+                <input type="number" id="subtotal"><br>
+
+                <label for="total">Total</label><br>
+                <input type="number" id="total"><br>
+
+                <label for="descripcion">Descripción</label><br>
+                <textarea id="descripcion" rows="4"></textarea><br>
+
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

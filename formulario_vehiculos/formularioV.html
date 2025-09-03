@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/formulario_vehiculos/disenoV.css">
+    <script src="logicaV.js" defer></script>
+    <title>Formulario de Vehículos</title>
+</head>
+
+<body>
+    <div class="contenedor_principal">
+        <h1 class="titulo-principal">Formulario para Vehículos</h1>
+        <form id="datos_vehiculos">
+            <h2>Registro de Vehículo</h2>
+
+            <label for="vehiculo">Vehículo</label><br>
+            <input type="text" id="vehiculo"><br>
+
+            <label for="registro">Registro</label><br>
+            <input type="text" id="registro"><br>
+
+            <label for="sucursal">Sucursal</label><br>
+            <select id="sucursal">
+                <option value="choluteca">Choluteca</option>
+                <option value="san_lorenzo">San Lorenzo</option>
+            </select><br>
+
+            <label for="tipo_vehiculo">Tipo de Vehículo</label><br>
+            <select id="tipo_vehiculo">
+                <option value="camion_pesado">Camión Pesado</option>
+                <option value="camion_ligero">Camión Ligero</option>
+            </select><br>
+
+            <label for="unidad_negocio">Unidad de Negocio</label><br>
+            <select id="unidad_negocio">
+                <option value="example1">Example1</option>
+                <option value="example2">Example2</option>
+            </select><br>
+
+            <label for="motorista">Motorista</label><br>
+            <input type="text" id="motorista"><br>
+
+            <label for="capacidad_libras">Capacidad (libras)</label><br>
+            <input type="number" id="capacidad_libras"><br>
+
+            <label for="mes_matricula">Mes de Matrícula</label><br>
+            <input type="month" id="mes_matricula"><br>
+
+            <label for="placa">Placa</label><br>
+            <input type="text" id="placa"><br>
+
+            <label for="marca">Marca</label><br>
+            <input type="text" id="marca"><br>
+
+            <label for="modelo">Modelo</label><br>
+            <input type="text" id="modelo"><br>
+
+            <label for="motor">Motor</label><br>
+            <input type="text" id="motor"><br>
+
+            <label for="chasis">Chasis</label><br>
+            <input type="text" id="chasis"><br>
+
+            <label for="cilindraje">Cilindraje</label><br>
+            <input type="number" id="cilindraje"><br>
+
+            <label for="ejes">Ejes</label><br>
+            <input type="number" id="ejes"><br>
+
+            <label for="anio_adquisicion">Año de Adquisición</label><br>
+            <input type="number" id="anio_adquisicion"><br>
+
+            <label for="edad_vehiculo">Edad del Vehículo</label><br>
+            <input type="number" id="edad_vehiculo"><br>
+
+            <label for="estatus">Estatus</label><br>
+            <input type="text" id="estatus"><br>
+
+            <label for="tipo_combustible">Tipo de Combustible</label><br>
+            <select id="tipo_combustible">
+                <option value="gasolina">Gasolina</option>
+                <option value="diesel">Diesel</option>
+            </select><br>
+
+            <label for="cap_tanque">Cap. Tanque Combustible</label><br>
+            <input type="number" id="cap_tanque"><br>
+
+            <label for="llantas">Llantas Numeración</label><br>
+            <input type="text" id="llantas"><br>
+
+            <label for="propietario">Propietario</label><br>
+            <input type="text" id="propietario"><br>
+
+            <label for="contrato_leasing">Contrato Leasing</label><br>
+            <input type="text" id="contrato_leasing"><br>
+
+            <label for="aseguradora">Aseguradora</label><br>
+            <input type="text" id="aseguradora"><br>
+
+            <label for="permiso_operacion">Permiso de Operación</label><br>
+            <input type="text" id="permiso_operacion"><br>
+
+            <label for="estado_vehiculo">Estado del Vehículo</label><br>
+            <select id="estado_vehiculo">
+                <option value="bueno">Bueno</option>
+                <option value="muy_bueno">Muy Bueno</option>
+                <option value="malo">Malo</option>
+            </select><br>
+
+            <label for="comentario">Comentario</label><br>
+            <textarea id="comentario"></textarea><br>
+
+            <label for="galones_aceite">Galones Reales de Aceite</label><br>
+            <input type="number" id="galones_aceite"><br>
+
+            <label for="gps">GPS</label><br>
+            <input type="text" id="gps"><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>

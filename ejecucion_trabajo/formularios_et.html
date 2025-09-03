@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Mantenimiento</title>
+    <link rel="stylesheet" href="/ejecucion_trabajo/diseno_et.css">
+    <script src="logica_et.js"></script>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1 class="titulo-principal">📋 Solicitud de Mantenimiento</h1>
+
+        <form id="form_solicitud">
+
+            <div class="datos_solicitud">
+                <h2>Datos de la solicitud</h2>
+
+                <label for="departamento_solicitante">Departamento solicitante:</label>
+                <select id="departamento_solicitante">
+                    <option value="">Seleccione el departamento</option>
+                    <option value="empresa1">Empresa 1</option>
+                    <option value="empresa2">Empresa 2</option>
+                </select>
+
+                <label for="fecha_solicitud">Fecha de la solicitud:</label>
+                <input type="date" id="fecha_solicitud">
+
+                <label for="empresa_solicitante">Empresa solicitante:</label>
+                <select id="empresa_solicitante">
+                    <option value="">Seleccione una empresa</option>
+                    <option value="empresa1">Empresa 1</option>
+                    <option value="empresa2">Empresa 2</option>
+                </select>
+
+                <label for="tipo_mantenimiento">Tipo de mantenimiento:</label>
+                <select id="tipo_mantenimiento">
+                    <option value="correctivo">Correctivo</option>
+                    <option value="preventivo">Preventivo</option>
+                </select>
+
+                <label for="prioridad">Prioridad:</label>
+                <select id="prioridad">
+                    <option value="alta">Alta</option>
+                    <option value="media">Media</option>
+                    <option value="baja">Baja</option>
+                </select>
+            </div>
+
+            <div class="tarjeta_datos_vehiculo">
+                <h2>Datos del vehículo</h2>
+
+                <label for="codigo_vehiculo">Código de Vehículo</label>
+                <input type="text" id="codigo_vehiculo">
+
+                <label for="motorista">Motorista:</label>
+                <input type="text" id="motorista">
+
+                <label for="vehiculo">Vehículo</label>
+                <input type="text" id="vehiculo">
+
+                <label for="placa">Placa</label>
+                <input type="text" id="placa">
+
+                <label for="kilometraje">Kilometraje</label>
+                <input type="text" id="kilometraje">
+            </div>
+
+            <div class="tarjeta_descripcion_solicitud">
+                <h2>Descripción de la solicitud</h2>
+
+                <label for="tipo_problema">¿Dónde y cuándo ocurrió la anomalía? (¿Clima? ¿Esfuerzo del
+                    vehículo?)</label>
+                <textarea id="tipo_problema" rows="4"></textarea>
+
+                <label for="descripcion_problema">¿Qué tipo de problema notó? (¿Ruido, Vibración, Olor, Alerta en
+                    tablero, Humo?) ¿En qué costado del vehículo?</label>
+                <textarea id="descripcion_problema" rows="4"></textarea>
+
+                <label for="anomalia">¿La anomalía es constante o intermitente?</label>
+                <textarea id="anomalia" rows="4"></textarea>
+            </div>
+
+            <div class="acciones">
+                <button type="submit">Enviar Solicitud 🚀</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
